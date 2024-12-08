@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  selenium:
+    image: selenium/standalone-chrome:latest
+    container_name: selenium
+    ports:
+      - "4444:4444" # Порт для WebDriver
+    shm_size: "2g" # Увеличение объема памяти для стабильной работы браузера
